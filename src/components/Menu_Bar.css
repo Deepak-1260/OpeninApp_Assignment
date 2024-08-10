@@ -1,0 +1,123 @@
+
+.menubar {
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s;
+  }
+  
+  .menubar.collapsed {
+    width: 40px;
+  }
+  
+  .menubar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    transition: width 0.3s;
+  }
+  
+  .menubar-menu {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menubar-item {
+   
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: padding-left 0.3s, background-color 0.3s;
+  }
+  
+  .menubar-item .icon {
+    margin-right: 10px;
+  }
+  
+  .menubar.collapsed .menubar-item .icon {
+    margin-right: 0;
+  }
+  
+  .menubar-item.active,
+  .menubar-item:hover {
+    padding-left: 10px;
+    border-left: 3px solid #9c6ade;
+  }
+  
+ 
+  .menubar.light-theme {
+    background-color: #f8f9fa;
+    color: #000000;
+  }
+  
+  .menubar.dark-theme {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .menubar.light-theme .menubar-item.active,
+  .menubar.light-theme .menubar-item:hover {
+    background-color: #e9ecef;
+    color: #000000;
+  }
+  
+  .menubar.dark-theme .menubar-item.active,
+  .menubar.dark-theme .menubar-item:hover {
+    background-color: #495057;
+    color: #ffffff;
+  }
+  
+  .theme-toggle-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  
+  .theme-toggle-button .icon {
+    margin-right: 0.5rem;
+  } 
+
+  @media (max-width: 450px) {
+  .menubar{
+    width: 4%;
+    height: 100vh;
+    position: fixed;
+    transition: width 0.3s;
+  }
+  .menubar p{
+    display: none;
+  }
+  .menubar-item {
+   
+    padding: 10px 0px;
+  }
+  
+  .menubar-item .icon {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
+  .menubar-item.active,
+  .menubar-item:hover {
+    padding-left: 0px;
+    border-left: 0px solid #9c6ade;
+  }
+  theme-toggle-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+   padding: 10px;
+    font-size: 1rem;
+  }
+  }

@@ -1,0 +1,249 @@
+/* Common Upload Styles */
+.upload-section {
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-left: 300px;
+  height: 100vh;
+  width: auto;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.upload-box {
+  border: 2px dashed #9c6ade; /* Violet border color */
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-button {
+  background-color: #9c6ade; /* Violet background color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.upload-button:hover {
+  background-color: #7a50bd;
+}
+
+.uploads-table {
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 300px;
+  position: relative;
+}
+
+.uploads-table h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 16px;
+}
+
+table th {
+  font-weight: 600;
+}
+
+/* Light Theme Styles */
+.upload-section.light-theme {
+  background-color: #f8f9fa;
+}
+
+.upload-box.light-theme {
+  background-color: #ffffff;
+  border-color: #9c6ade; /* Violet border color */
+}
+
+.upload-button.light-theme {
+  background-color: #9c6ade; /* Violet background color */
+  color: #fff;
+}
+
+.uploads-table.light-theme {
+  background-color: #ffffff;
+}
+
+table.light-theme th {
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+table.light-theme td {
+  background-color: #ffffff;
+  color: #495057;
+}
+
+table.light-theme tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Dark Theme Styles */
+.upload-section.dark-theme {
+  background-color: #343a40;
+}
+
+.upload-box.dark-theme {
+  background-color: #495057;
+  border-color: #6c757d;
+}
+
+.upload-button.dark-theme {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.uploads-table.dark-theme {
+  background-color: #495057;
+}
+
+table.dark-theme th {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+table.dark-theme td {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+table.dark-theme tr:hover {
+  background-color: #6c757d;
+}
+
+.uploadFile {
+  display: none;
+}
+
+.custom-file-label {
+  background-color: transparent;
+  color: #370cc4; /* Violet text color */
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 5px 10px;
+  margin-left: 85px;
+  padding: 10px;
+}
+
+.file-name {
+  font-size: 16px;
+  color: #9c6ade; /* Violet text color */
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.table-responsive {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  max-width: 100%; /* Full width */
+}
+
+.table {
+  min-width: 600px; /* Minimum width for table */
+}
+
+
+
+@media (max-width: 450px) {
+  .upload-section {
+   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 45px;
+    height: 100vh;
+    width: 90%;
+  }
+  .Viewer{
+    width: 100vw;
+  }
+  .alert-danger{
+    font-size: small;
+    text-align: center;
+  }
+  .upload-box {
+    border: 2px dashed #9c6ade; /* Violet border color */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .upload-section h1{
+    font-size: medium;
+    justify-content: center;
+
+  }
+  .table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 70%; /* Full width */
+  }
+  .table{
+    width:90%;
+    padding:7%;
+    margin-left: 25%;
+    min-width: 0px;
+
+  }
+  table th,
+table td {
+  padding: 3px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: small;
+}
+.sticky-column {
+  position: sticky;
+  margin-left: 25%;
+  left: 0;
+  font-size: small;
+  background-color: #f9f9f9; /* Ensure it matches your table's background */
+  z-index: 0; /* Keeps it above other columns */
+  box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+  .upload-button{
+    font-size: small;
+  }
+  .custom-file-label{
+    font-size: small;
+  }
+   .file-name{
+    font-size: small;
+   }
+}
